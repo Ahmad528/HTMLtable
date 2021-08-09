@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sample Marksheet</title>
+
+    <!-- css file link -->
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="parent">
+        <div class="add-subject">
+            <h3 class="title">ADD SUBJECTS</h3>
+
+            <div class="sub-box">
+                <input type="text" id="subject" name="subject" value="" placeholder="Enter Subject...">
+                <input type="text" id="marks" name="marks" value="" placeholder="Enter Marks...">
+                <input type="text" id="full-marks" name="full-marks" value="" placeholder="Enter Full Marks...">
+                <button id="btn1" class="btn" onclick="addToTable()">ADD TO TABLE</button>
+            </div>
+
+            <div class="marksheet">
+                <div id="marksheet-body">
+                    <h2>Your Result : </h2>
+                    <p id="m-totalmarks">Total Marks: 0</p>
+                    <p id="m-fullmarks">Full Marks : 0</p>
+                    <p id="m-average">Average Marks : 0 </p>
+                    <p id="m-percentage">Percentage : 0</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="marks-table">
+            <h3 class="title">MARKS TABLES</h3>
+            <button id="btn2" disabled class="btn" onclick="getResult()">GET RESULT </button>
+            <button id="btn3" class="btn" disabled onclick="refresh()">CLEAR</button>
+
+            <div class="table-body">
+                <table border>
+                    <thead>
+                        <tr>
+                            <th>S. No.</th>
+                            <th>Subject</th>
+                            <th>Marks</th>
+                            <th>Full Marks</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                </table>
+                <h3 id="no-data">No Data Available...</h3>
+            </div>
+        </div>
+
+        <div class="grade-system">
+            <h3 class="title">GRADE SYSTEM</h3>
+            <div class="grade-body">
+                <table>
+                    <tbody>
+                        <tr>
+                            <td>A+</td>
+                            <td>95%+</td>
+                        </tr>
+                        <tr>
+                            <td>A</td>
+                            <td>90%+</td>
+                        </tr>
+                        <tr>
+                            <td>B+</td>
+                            <td>80%+</td>
+                        </tr>
+                        <tr>
+                            <td>B</td>
+                            <td>70%+</td>
+                        </tr>
+                        <tr>
+                            <td>C+</td>
+                            <td>60%+</td>
+                        </tr>
+                        <tr>
+                            <td>C</td>
+                            <td>50%+</td>
+                        </tr>
+                        <tr>
+                            <td>D+</td>
+                            <td>40%+</td>
+                        </tr>
+                        <tr>
+                            <td>D</td>
+                            <td>30%+</td>
+                        </tr>
+                        <tr>
+                            <td>E+</td>
+                            <td>25%+</td>
+                        </tr>
+                        <tr>
+                            <td>E</td>
+                            <td>20%+</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</body>
+<!-- javascript source file -->
+<script src="index.js"></script>
+</html>

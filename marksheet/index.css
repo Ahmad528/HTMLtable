@@ -1,0 +1,122 @@
+body{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-align: center;
+    overflow: hidden;
+    font-family: sans-serif;
+}
+.parent{
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    min-height: 100vh;
+}
+.add-subject{
+    background: rgb(223, 238, 243);
+    text-transform: capitalize;
+    position: relative;
+}
+.title{
+    background: darkslategray;
+    color: whitesmoke;
+    margin-top: 0;
+    padding: 0.5rem 0;
+}
+
+
+
+.sub-box{
+    text-align: center;
+    padding: 0.5rem 1rem;
+}
+input{
+    font-size: 1.1rem;
+    border-radius: 0.3rem;
+    margin: 0.5rem 0;
+    padding: 0.3rem 0.8rem;
+    border: none;
+    background: white;
+    color: teal;
+}
+input:focus{
+    outline: none;
+    background: whitesmoke;
+}
+.marksheet{
+    background: rgb(250,191,168);
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+.marksheet h2{
+    color: teal;
+}
+.marksheet p{
+    color: darkolivegreen;
+    font-family: sans-serif;
+    font-size: 1rem;
+}
+
+.marks-table{
+    background: whitesmoke;
+    overflow-y: auto;
+}
+.table-body{
+    padding: 1rem 2rem;
+    text-align: center;
+    height: 25rem;
+    overflow: hidden;
+    overflow-y: auto;
+}
+.btn{
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 1rem;
+    background: cornflowerblue;
+    color: whitesmoke;
+    outline: none;
+}
+.btn:active{
+    background: cadetblue;
+}
+#btn1{
+    margin-top: 2rem;
+}
+#btn2,#btn3{
+    margin-top: 0.5rem;
+    color: whitesmoke;
+    background: lightgray;
+}
+.table-body table{
+    width: 100%;
+    color: dimgray;
+    border-collapse: collapse;
+    font-size: 1.3rem;
+}
+table td,th{
+    padding: 0.2rem 0;
+    text-transform: capitalize;
+}
+
+
+.grade-system{
+    background: rgb(252,231,234);
+    text-align: center;
+}
+.grade-body table{
+    width: 100%;
+    margin-top: 5rem;
+    border-collapse: collapse;
+    font-size: 1.2rem;
+    color: darkslategrey;
+
+}
+.grade-body table td{
+    border: none;
+    padding: 0.5rem;
+}
+.grade-body table tr:nth-child(even){
+    background: dimgray;
+    color: whitesmoke;
+}
